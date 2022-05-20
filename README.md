@@ -9,7 +9,7 @@ for (int i = 0; i < 100; i++)
         Id = Guid.NewGuid(),
         Name = "Name",
         Description = "Description",
-        Date = DateTime.now
+        Date = DateTime.Now
     });
 }
 
@@ -31,6 +31,6 @@ public class YourModel
     public string Description {get; set;}
 
     [Field("CreateDate")]
-    public string Date {get; set;}
+    public DateTime Date {get; set;}
 }
 ```

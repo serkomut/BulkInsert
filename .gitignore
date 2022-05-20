@@ -7,6 +7,7 @@
 .vs/
 obj/
 bin/
+packages/
 
 # Node artifact files
 node_modules/

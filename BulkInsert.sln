@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rescop.BulkInsert", "src\Rescop.BulkInsert\Rescop.BulkInsert.csproj", "{26158AF3-A479-4F0E-BDEB-DEE780EC02B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rescop.BulkInsert.Test", "src\Rescop.BulkInsert.Test\Rescop.BulkInsert.Test.csproj", "{12986045-105B-4229-9B5F-72B6D4C8937C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{26158AF3-A479-4F0E-BDEB-DEE780EC02B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26158AF3-A479-4F0E-BDEB-DEE780EC02B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26158AF3-A479-4F0E-BDEB-DEE780EC02B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12986045-105B-4229-9B5F-72B6D4C8937C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12986045-105B-4229-9B5F-72B6D4C8937C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12986045-105B-4229-9B5F-72B6D4C8937C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12986045-105B-4229-9B5F-72B6D4C8937C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
