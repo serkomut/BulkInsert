@@ -1,5 +1,5 @@
 # Rescop.BulkInsert
-
+How does it work?
 ``` csharp
 var datas = new List<YourModel>();
 for (int i = 0; i < 100; i++)
