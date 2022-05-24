@@ -5,7 +5,7 @@ using System.Reflection;
 
 namespace Rescop.BulkInsert
 {
-    public static class ModelToDataTableMapper
+    public static class DataTableMapperExtensions
     {
         public static DataTable MapModel<T>(this IEnumerable<T> models, string tableName) where T : class, new()
         {
@@ -41,8 +41,6 @@ namespace Rescop.BulkInsert
                     if (value != null)
                         matchCount++;
                 }
-
-                //Skip empty models  
                 if (matchCount > 0)
                     result.Rows.Add(row);
             }
@@ -52,7 +50,7 @@ namespace Rescop.BulkInsert
         {
             foreach (var pi in infos)
             {
-                FieldAttribute attribute = pi.GetCustomAttributes(typeof(FieldAttribute), true).First() as FieldAttribute;
+                var attribute = pi.GetCustomAttributes(typeof(FieldAttribute), true).First() as FieldAttribute;
                 if (!string.IsNullOrWhiteSpace(attribute.ColumnName))
 
                     dataTable.Columns.Add(attribute.ColumnName);
