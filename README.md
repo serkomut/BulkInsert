@@ -2,7 +2,7 @@
 How does it work?
 ``` csharp
 var datas = new List<YourModel>();
-for (int i = 0; i < 100; i++)
+for (int i = 0; i < 1000000; i++)
 {
     datas.Add(new YourModel
     {
